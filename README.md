@@ -43,6 +43,6 @@ Derive **Land Surface Temperature (LST)** for UHI analysis.
 Train a **Random Forest Regression** model to predict the UHI Index.
 
 ## **Project Impact**
-**Urban Planners:** Design heat-resilient cities.
-**Governments:** Prioritize climate adaptation projects.
+**Urban Planners:** Design heat-resilient cities.  
+**Governments:** Prioritize climate adaptation projects.  
 **Communities:** Raise awareness of urban heat impacts.
