@@ -46,7 +46,3 @@ Train a **Random Forest Regression** model to predict the UHI Index.
 **Urban Planners:** Design heat-resilient cities.
 **Governments:** Prioritize climate adaptation projects.
 **Communities:** Raise awareness of urban heat impacts.
-
-## **References & Acknowledgments**  
-- [EY Open Science Challenge Official Website](#)  
-- [Dataset Sources](#) _(To be added)_  
