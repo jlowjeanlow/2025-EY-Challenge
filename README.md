@@ -10,39 +10,38 @@ The UHI effect exacerbates rising urban temperatures, impacting energy consumpti
 - Propose data-driven mitigation strategies for urban planners and policymakers.  
 
 ## **Data Sources**
-Weather Data: OpenWeatherMap API
+- Additional Data:
+  - Weather Data
 
-Satellite Imagery: Landsat 8, Sentinel-2
+- Feature Data:
+  - Satellite Imagery: Landsat 8, Sentinel-2
 
-## **Training Data Features**
-Geospatial: Longitude, Latitude
-
-Temporal: Datetime
-
-Environmental: UHI Index, Land Surface Temperature (LST)
-
-Urban Metrics: Building density, floor area ratio, vegetation indices
+- Training Data:
+  - Longitude
+  - Latitude
+  - Datetime
+  - UHI Index
 
 ## **Methodology**
 **1. Data Preprocessing**
 
-Extract areas of interest (e.g., Manhattan, The Bronx) using osmnx.
+- Extract areas of interest (e.g., Manhattan, The Bronx) using osmnx.
 
-Merge weather and training data based on location and timestamp.
+- Merge weather and training data based on location and timestamp.
 
-Compute urban metrics: building count, area, height, and compactness within a 700m buffer around each training point.
+- Compute urban metrics: building count, area, height, and compactness within a 700m buffer around each training point.
 
 **2. Satellite Features & Indices**
 
-Extract **NDVI, NDBI, NDWI, emissivity** from Landsat 8 & Sentinel-2.
+- Extract **NDVI, NDBI, NDWI, emissivity** from Landsat 8 & Sentinel-2.
 
-Derive **Land Surface Temperature (LST)** for UHI analysis.
+- Derive **Land Surface Temperature (LST)** for UHI analysis.
 
 **3. Machine Learning Modeling**
 
-Train a **Random Forest Regression** model to predict the UHI Index.
+- Train a **Random Forest Regression** model to predict the UHI Index.
 
 ## **Project Impact**
-**Urban Planners:** Design heat-resilient cities.  
-**Governments:** Prioritize climate adaptation projects.  
-**Communities:** Raise awareness of urban heat impacts.
+- **Urban Planners:** Design heat-resilient cities.  
+- **Governments:** Prioritize climate adaptation projects.  
+- **Communities:** Raise awareness of urban heat impacts.
